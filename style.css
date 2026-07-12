@@ -1,508 +1,340 @@
-/* ==========================================================
-   PROFESSIONAL UI ENHANCEMENT
-   Lao Engineering Solutions
-   Paste this at the END of your style.css
-========================================================== */
+<!DOCTYPE html>
+<html lang="en">
 
-/* Smooth page load */
-body{
-    animation:fadeIn .8s ease;
-}
+<head>
 
-@keyframes fadeIn{
-    from{
-        opacity:0;
-    }
-    to{
-        opacity:1;
-    }
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* ===========================
-   PROFESSIONAL GLASS HEADER
-=========================== */
+    <title>Lao Engineering Solutions</title>
 
-header{
+    <link rel="stylesheet" href="style.css">
 
-    position:sticky;
-    top:0;
-    left:0;
+</head>
 
-    background:rgba(10,35,66,.88);
+<body>
 
-    backdrop-filter:blur(15px);
-    -webkit-backdrop-filter:blur(15px);
+    <!-- ================= HEADER ================= -->
 
-    border-bottom:1px solid rgba(255,255,255,.08);
+    <header>
 
-    transition:.35s;
+        <div class="logo">
+            <h1>LAO ENGINEERING SOLUTIONS</h1>
+            <p>Engineering • Design • Innovation</p>
+        </div>
 
-    box-shadow:
-    0 10px 30px rgba(0,0,0,.08),
-    0 20px 50px rgba(0,0,0,.05);
+        <nav>
 
-}
+            <ul>
 
-/* ===========================
-   NAVIGATION
-=========================== */
+                <li><a href="index.html">Home</a></li>
 
-nav ul li a{
+                <li><a href="about.html">About</a></li>
 
-    position:relative;
+                <li><a href="services.html">Services</a></li>
 
-    overflow:hidden;
+                <li><a href="projects.html">Projects</a></li>
 
-    transition:.35s;
+                <li><a href="pricing.html">Pricing</a></li>
 
-}
+                <li><a href="contact.html">Contact</a></li>
 
-nav ul li a::after{
+            </ul>
 
-    content:"";
+        </nav>
 
-    position:absolute;
+    </header>
 
-    left:0;
 
-    bottom:-5px;
 
-    width:0;
+    <!-- ================= HERO ================= -->
 
-    height:2px;
+    <section class="hero">
 
-    background:#00B4D8;
+        <div class="hero-text">
 
-    transition:.35s;
+            <h2>Engineering Tomorrow,<br>Building Today.</h2>
 
-}
+            <p>
 
-nav ul li a:hover{
+                Welcome to Lao Engineering Solutions.
 
-    color:#00D4FF;
+                We provide innovative engineering services,
 
-}
+                Arduino development, electrical designs,
 
-nav ul li a:hover::after{
+                renewable energy solutions,
 
-    width:100%;
+                and 3D printing services.
 
-}
+            </p>
 
-/* ===========================
-   HERO
-=========================== */
+            <a href="projects.html">
 
-.hero{
+                <button>Explore Projects</button>
 
-    position:relative;
+            </a>
 
-    overflow:hidden;
+            <a href="services.html">
 
-    background:
-    linear-gradient(
-    rgba(10,35,66,.78),
-    rgba(10,35,66,.78)),
-    url("../images/hero.jpg");
+                <button>Our Services</button>
 
-    background-position:center;
+            </a>
 
-    background-size:110%;
+        </div>
 
-    animation:heroZoom 20s ease-in-out infinite alternate;
+    </section>
 
-}
 
-@keyframes heroZoom{
 
-    from{
+    <!-- ================= ABOUT ================= -->
 
-        background-size:110%;
+    <section class="about-preview">
 
-    }
+        <h2>About Us</h2>
 
-    to{
+        <p>
 
-        background-size:125%;
+            Lao Engineering Solutions is dedicated to delivering
+            high-quality engineering projects, innovative research,
+            automation systems, renewable energy solutions,
+            and custom prototype development.
 
-    }
+        </p>
 
-}
+        <a href="about.html">
 
-/* Hero Text */
+            <button>Learn More</button>
 
-.hero-text{
+        </a>
 
-    opacity:0;
+    </section>
 
-    animation:heroFade 1.2s ease forwards;
 
-}
 
-@keyframes heroFade{
+    <!-- ================= SERVICES ================= -->
 
-0%{
+    <section class="services">
 
-opacity:0;
+        <h2>Our Services</h2>
 
-transform:translateY(40px);
+        <div class="service-container">
 
-}
+            <div class="card">
 
-100%{
+                <h3>⚡ Electrical Design</h3>
 
-opacity:1;
+                <p>
+                    Residential, Commercial,
+                    and Industrial electrical plans.
+                </p>
 
-transform:translateY(0);
+            </div>
 
-}
+            <div class="card">
 
-}
+                <h3>🤖 Arduino Programming</h3>
 
-/* Scroll Indicator */
+                <p>
 
-.hero::after{
+                    Automation systems,
+                    IoT,
+                    Embedded Projects.
 
-content:"⌄";
+                </p>
 
-position:absolute;
+            </div>
 
-left:50%;
+            <div class="card">
 
-bottom:25px;
+                <h3>🖨 3D Printing</h3>
 
-transform:translateX(-50%);
+                <p>
 
-font-size:34px;
+                    PLA,
+                    PETG,
+                    TPU,
+                    Rapid Prototyping.
 
-color:white;
+                </p>
 
-animation:bounce 2s infinite;
+            </div>
 
-}
+            <div class="card">
 
-@keyframes bounce{
+                <h3>☀ Renewable Energy</h3>
 
-0%,100%{
+                <p>
 
-transform:translate(-50%,0);
+                    Solar Energy,
+                    Battery Systems,
+                    Energy Monitoring.
 
-}
+                </p>
 
-50%{
+            </div>
 
-transform:translate(-50%,10px);
+        </div>
 
-}
+    </section>
 
-}
 
-/* ===========================
-   PREMIUM BUTTONS
-=========================== */
 
-button{
+    <!-- ================= FEATURED PROJECTS ================= -->
 
-background:linear-gradient(
-135deg,
-#00B4D8,
-#0077B6);
+    <section class="projects">
 
-color:white;
+        <h2>Featured Projects</h2>
 
-font-weight:600;
+        <div class="project-container">
 
-letter-spacing:.5px;
+            <div class="project-card">
 
-transition:
-transform .35s,
-box-shadow .35s,
-background .35s;
+                <img src="images/fishfeeder.jpg" alt="Fish Feeder">
 
-box-shadow:
+                <h3>Solar Powered Fish Feeder</h3>
 
-0 12px 30px rgba(0,180,216,.30);
+                <p>
 
-}
+                    Arduino Nano
 
-button:hover{
+                    RTC
 
-transform:translateY(-6px);
+                    Servo
 
-box-shadow:
+                    Solar Powered
 
-0 20px 40px rgba(0,180,216,.40);
+                </p>
 
-}
+                <a href="projects/fishfeeder.html">
 
-button:active{
+                    <button>View Project</button>
 
-transform:scale(.96);
+                </a>
 
-}
+            </div>
 
-/* ===========================
-   SECTION TITLES
-=========================== */
+            <div class="project-card">
 
-section h2{
+                <img src="images/teg.jpg" alt="TEG">
 
-position:relative;
+                <h3>Thermoelectric Generator</h3>
 
-display:inline-block;
+                <p>
 
-left:50%;
+                    Rice Husk Biomass
 
-transform:translateX(-50%);
+                    Renewable Energy
 
-margin-bottom:60px;
+                </p>
 
-}
+                <a href="projects/teg.html">
 
-section h2::after{
+                    <button>View Project</button>
 
-content:"";
+                </a>
 
-display:block;
+            </div>
 
-margin:15px auto;
+            <div class="project-card">
 
-width:70px;
+                <img src="images/electrical.jpg" alt="Electrical">
 
-height:4px;
+                <h3>Electrical Design</h3>
 
-background:#00B4D8;
+                <p>
 
-border-radius:20px;
+                    AutoCAD
 
-}
+                    Load Schedule
 
-/* ===========================
-   SERVICE CARDS
-=========================== */
+                    Panel Schedule
 
-.card{
+                </p>
 
-background:white;
+                <a href="projects/electrical.html">
 
-border-radius:18px;
+                    <button>View Project</button>
 
-overflow:hidden;
+                </a>
 
-position:relative;
+            </div>
 
-transition:.45s;
+        </div>
 
-box-shadow:
+    </section>
 
-0 15px 35px rgba(0,0,0,.08);
 
-}
 
-.card::before{
+    <!-- ================= WHY CHOOSE US ================= -->
 
-content:"";
+    <section class="why">
 
-position:absolute;
+        <h2>Why Choose Us?</h2>
 
-top:0;
+        <ul>
 
-left:0;
+            <li>✔ Professional Engineering Solutions</li>
 
-width:100%;
+            <li>✔ Innovative Research</li>
 
-height:4px;
+            <li>✔ Affordable Pricing</li>
 
-background:#00B4D8;
+            <li>✔ High Quality Designs</li>
 
-transform:scaleX(0);
+            <li>✔ Fast Project Delivery</li>
 
-transform-origin:left;
+        </ul>
 
-transition:.4s;
+    </section>
 
-}
 
-.card:hover::before{
 
-transform:scaleX(1);
+    <!-- ================= CALL TO ACTION ================= -->
 
-}
+    <section class="cta">
 
-.card:hover{
+        <h2>Let's Build Something Amazing Together!</h2>
 
-transform:translateY(-12px);
+        <p>
 
-box-shadow:
+            Whether you need engineering services,
+            custom automation,
+            or 3D printing,
+            we're ready to help.
 
-0 25px 60px rgba(0,0,0,.18);
+        </p>
 
-}
+        <a href="contact.html">
 
-/* ===========================
-   PROJECTS
-=========================== */
+            <button>Contact Us</button>
 
-.project-card{
+        </a>
 
-overflow:hidden;
+    </section>
 
-transition:
 
-transform .45s,
 
-box-shadow .45s;
+    <!-- ================= FOOTER ================= -->
 
-box-shadow:
+    <footer>
 
-0 15px 35px rgba(0,0,0,.08);
+        <h3>LAO ENGINEERING SOLUTIONS</h3>
 
-}
+        <p>
 
-.project-card img{
+            Engineering • Innovation • Technology
 
-transition:
+        </p>
 
-transform .7s;
+        <p>
 
-}
+            © 2026 Lao Engineering Solutions
 
-.project-card:hover img{
+        </p>
 
-transform:scale(1.12);
+    </footer>
 
-}
+</body>
 
-.project-card:hover{
-
-transform:translateY(-10px);
-
-box-shadow:
-
-0 30px 60px rgba(0,0,0,.20);
-
-}
-
-/* ===========================
-   WHY SECTION
-=========================== */
-
-.why{
-
-box-shadow:
-
-0 20px 45px rgba(10,35,66,.30);
-
-}
-
-/* ===========================
-   CTA
-=========================== */
-
-.cta{
-
-box-shadow:
-
-0 20px 40px rgba(0,0,0,.08);
-
-transition:.4s;
-
-}
-
-.cta:hover{
-
-transform:translateY(-6px);
-
-}
-
-/* ===========================
-   FOOTER
-=========================== */
-
-footer{
-
-position:relative;
-
-overflow:hidden;
-
-}
-
-footer::before{
-
-content:"";
-
-position:absolute;
-
-left:0;
-
-top:0;
-
-width:100%;
-
-height:2px;
-
-background:linear-gradient(
-90deg,
-transparent,
-#00B4D8,
-transparent);
-
-}
-
-/* ===========================
-   SMOOTH HOVER
-=========================== */
-
-img{
-
-transition:.5s;
-
-}
-
-a{
-
-transition:.3s;
-
-}
-
-.card,
-.project-card,
-button{
-
-will-change:transform;
-
-}
-
-/* ===========================
-   RESPONSIVE
-=========================== */
-
-@media(max-width:900px){
-
-.hero{
-
-background-size:cover;
-
-}
-
-.hero h2{
-
-font-size:42px;
-
-}
-
-.hero p{
-
-font-size:18px;
-
-}
-
-button{
-
-width:220px;
-
-margin:10px;
-
-}
-
-}
+</html>
