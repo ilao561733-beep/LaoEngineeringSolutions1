@@ -6,7 +6,7 @@
    image paths if needed.
 ========================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 *{
     margin:0;
@@ -113,4 +113,4 @@ button{
 button:hover{
     transform:translateY(-6px);
     box-shadow:0 0 20px #00B4D8,0 0 40px rgba(0,180,216,.5);
-}
+} 
